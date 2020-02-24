@@ -1,0 +1,77 @@
+.tinfo_content{
+  padding: 0.4rem 1.6rem;
+  font-weight: 400;
+  color: #4a4a4a;
+  >div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(220,220,220,0.88);
+    padding-bottom: 0.1rem;
+    >span{
+      font-size: 0.3rem;
+      font-weight: 500;
+      color: #4a4a4a;
+    }
+    >a{
+      width: 0.6rem;
+      height: 0.32rem;
+      line-height: 0.32rem;
+      text-align: center;
+      color: #909090;
+      border: 1.5px solid rgba(220,220,220,1  );
+      font-weight: 400;
+      display: inline-block;
+      font-size: 0.18rem;
+      border-radius: 2px;
+    }
+  }
+  >label{
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.2rem;
+    >span{
+      letter-spacing: 1px;
+    }
+    >input{
+      width: 5rem;
+      height: 0.5rem;
+      background: rgba(220,220,220,0.15);
+      padding: 0 0.15rem;
+      margin: 0.06rem 0.02rem;
+      font-size: 0.18rem;
+      border-radius: 4px;
+      &::placeholder{
+        color: #dcdcdc;
+      }
+    }
+    >div{
+      padding: 0.1rem 0.1rem;
+    }
+    /deep/ .el-radio__label{
+      font-size: 0.18rem;
+      margin-right: 0.3rem;
+    }
+    /deep/ .el-radio__input.is-checked .el-radio__inner{
+      border-color: #796BF5;
+      background: #796BF5;
+    }
+    /deep/ .el-input{
+      font-size: 0.17rem;
+    }
+    /deep/ .el-select .el-input__inner:focus{
+      border-color: #8391a5;
+    }
+    /deep/ .el-input__inner{
+      text-align: right;
+      height: 0.42rem;
+      border: 1px solid rgba(82,82,82,0.66);
+      &::placeholder{
+        color: #4a4a4a;
+      }
+    }
+    /deep/ .el-select .el-input .el-input__icon{
+      color:rgba(82,82,82,0.66);
+      font-size: 0.08rem;
+    }
+  }
+}

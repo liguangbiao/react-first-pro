@@ -1,0 +1,164 @@
+.admin_type{
+  padding: 0.3rem 0.3rem;
+  font-size: 0.18rem;
+  font-weight: 400;
+  >div {
+    background: white;
+    width: 100%;
+    padding: 0.3rem 0.8rem;
+    &:first-child{
+      >div{
+        &:first-child{
+          padding-bottom: 0.14rem;
+          border-bottom: 1px solid #e5e5e5;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 0.14rem;
+          >p{
+            font-size: 0.32rem;
+            color: #4a4a4a;
+            font-weight: 500;
+          }
+          >a{
+            width: 1.2rem;
+            height: 0.38rem;
+            line-height: 0.38rem;
+            text-align: center;
+            color: white;
+            border: 1.5px solid #4877E6;
+            font-weight: 400;
+            display: inline-block;
+            font-size: 0.18rem;
+            border-radius: 0.04rem;
+            background: #4877E6;
+          }
+          >label{
+            display: flex;
+            align-items: center;
+            >input{
+              border: 1px solid #eeeeee;
+              width: 3.6rem;
+              line-height: 0.4rem;
+              color: #525252;
+              font-size: 0.18rem;
+              padding: 0 0.2rem;
+              box-sizing: border-box;
+              &::placeholder{
+                color:#eeeeee;
+              }
+            }
+            >a{
+              width: 0.6rem;
+              border-left: 1px solid #eeeeee;
+              //height: 100%;
+              position: relative;
+              left: -0.6rem;
+              box-sizing: border-box;
+              padding: 0.1rem 0;
+              display: flex;
+              justify-content: center;
+              >i{
+                line-height: 0;
+                font-size: 0.22rem;
+                color:#eeeeee;
+              }
+            }
+          }
+        }
+      }
+      .type-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.2rem;
+        >label{
+          font-size: 0.2rem;
+          color: #4a4a4a;
+          >span{
+            padding-right: 0.4rem;
+          }
+          >a{
+            margin:  0 0.2rem;
+          }
+        }
+        >div{
+          >img{
+            width: 0.3rem;
+            vertical-align: middle;
+          }
+          >label{
+            color: #9B9B9B;
+            padding: 0 0.12rem;
+            >span{
+              color: #EC4949;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    &:last-child{
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      padding: 0.3rem 0.6rem;
+      margin-top: 0.14rem;
+      >div{
+        width: 30%;
+        background: white;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 4px rgba(204,204,204,0.4);
+        padding-bottom: 0.2rem;
+        margin: 0.3rem 0.2rem;
+        >img{
+          width: 100%;
+          height: 2.3rem;
+          margin-bottom: 0.1rem;
+        }
+        >p{
+          padding: 0.1rem 0.1rem 0.1rem 0.3rem;
+          font-size: 0.24rem;
+          font-weight: 500;
+        }
+        >label{
+          display: flex;
+          padding: 0.06rem 0.06rem 0.1rem 0.3rem;
+          color: #9B9B9B;
+          >span{
+            font-size: 0.18rem;
+            display: inline-block;
+            &:first-child{
+              padding-right: 0.3rem;
+              margin-right: 0.26rem;
+              border-right: 1px solid #e5e5e5;
+            }
+          }
+          /deep/.el-rate{
+            margin-left: 0.14rem;
+          }
+        }
+        >span{
+          display: inline-block;
+          position: absolute;
+          width: 1rem;
+          height: 0.3rem;
+          line-height: 0.3rem;
+          font-size: 0.16rem;
+          color: white;
+          text-align: center;
+          border-bottom-right-radius:0.26rem;
+          border-top-right-radius:0.26rem;
+          background: #EC4949;
+          left: 0;
+          top: 0.2rem;
+        }
+      }
+    }
+  }
+}

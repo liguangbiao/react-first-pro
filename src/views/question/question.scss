@@ -1,0 +1,39 @@
+.qt_wrap{
+  background: #e5e5e5;
+  .qt_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem 0;
+    background: url("../../assets/images/qt1.png");
+    >p{
+      font-size: 0.4rem;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+    >div{
+      width: 58%;
+      background: white;
+      padding: 0.3rem 0.34rem;
+      border-radius: 0.26rem;
+      margin: 0.16rem 0;
+      >p{
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 0.2rem;
+        color: #4a4a4a;
+        padding-bottom: 0.1rem;
+        font-weight: 400;
+        margin-bottom: 0.1rem;
+      }
+      >span{
+        font-size: 0.16rem;
+        color: rgb(144,144,144);
+        display: inline-block;
+        margin: 0.1rem 0;
+        line-height: 0.28rem;
+      }
+    }
+  }
+}

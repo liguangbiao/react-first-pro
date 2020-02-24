@@ -1,0 +1,82 @@
+.pay_wrap{
+  width: 100%;
+  font-size: 0.16rem;
+  .main{
+    width: 100%;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 0.4rem 3rem;
+    >div{
+      background: white;
+      padding: 0.4rem 0.7rem;
+      display: flex;flex-direction: column;
+      align-items: center;
+      text-align: center;
+      >p{
+        font-size: 0.26rem;
+        font-weight: 500;
+        color: #4a4a4a;
+        width: 4rem;
+        margin: 0.04rem 0;
+        .price{
+          font-size: 0.30rem;
+          color: #02C063;
+          font-weight: 600;
+        }
+      }
+      >div{
+        display: flex;
+        >a{
+          font-size: 0.2rem;
+          font-weight: 500;
+          color: #4a4a4a;
+          display: flex;
+          padding: 0.08rem 0.2rem;
+          align-items: center;
+          border: 2px solid rgba(144,144,144,0.3);
+          margin: 0.1rem 0.16rem;
+          >img{
+            width: 0.22rem;
+            height: 0.22rem;
+            margin-right: 0.1rem;
+          }
+          &:hover{
+            border: 2px solid #f2ab2b;
+          }
+        }
+        .active{
+          border: 2px solid #f2ab2b;
+          position: relative;
+          &:after{
+            position: absolute;
+            content: '';
+            color: white;
+            right: -0.15rem;
+            bottom: -0.04rem;
+            border-width: 0 0.22rem 0.22rem;
+            border-style: solid;
+            border-color: transparent transparent #f2ab2b;
+            transform: rotate(135deg);
+          }
+          &:before{
+            position: absolute;
+            content: '';
+            right: 0.04rem;
+            bottom: 0.03rem;
+            z-index: 9;
+            width: 0.06rem;
+            height: 0.12rem;
+            border-left: 2px solid white;
+            border-top: 2px solid white;
+            display: inline-block;
+            transform: rotate(-145deg);
+          }
+        }
+        >img{
+          width: 3rem;
+          height: 4rem;
+          margin: 0.2rem 0.3rem;
+        }
+      }
+    }
+  }
+}

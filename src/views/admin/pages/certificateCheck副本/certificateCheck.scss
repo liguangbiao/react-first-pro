@@ -1,0 +1,180 @@
+.admin_certificateCheck{
+  padding: 0.3rem 0.3rem;
+  font-size: 0.18rem;
+  font-weight: 400;
+  >div {
+    width: 100%;
+    padding: 0.3rem 0.8rem;
+    &:first-child {
+      padding: 0.3rem 0.8rem 0 0.8rem;
+      box-shadow: 0 0 10px #dcdcdc;
+      background: white;
+      > div {
+        &:first-child {
+          padding-bottom: 0.24rem;
+          border-bottom: 1px solid #e5e5e5;
+          display: flex;
+          justify-content: space-between;
+          //margin-bottom: 0.14rem;
+
+          > p {
+            font-size: 0.32rem;
+            color: #4a4a4a;
+            font-weight: 500;
+          }
+
+          > a {
+            width: 1.2rem;
+            height: 0.38rem;
+            line-height: 0.38rem;
+            text-align: center;
+            color: white;
+            border: 1.5px solid #4877E6;
+            font-weight: 400;
+            display: inline-block;
+            font-size: 0.18rem;
+            border-radius: 0.04rem;
+            background: #4877E6;
+          }
+
+          > label {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 1rem;
+            > input {
+              border: 1px solid #eeeeee;
+              width: 3.6rem;
+              line-height: 0.4rem;
+              color: #525252;
+              font-size: 0.18rem;
+              padding: 0 0.2rem;
+              box-sizing: border-box;
+
+              &::placeholder {
+                color: #eeeeee;
+              }
+            }
+
+            > a {
+              width: 0.6rem;
+              border-left: 1px solid #eeeeee;
+              //height: 100%;
+              position: relative;
+              left: -0.6rem;
+              box-sizing: border-box;
+              padding: 0.1rem 0;
+              display: flex;
+              justify-content: center;
+
+              > i {
+                line-height: 0;
+                font-size: 0.22rem;
+                color: #eeeeee;
+              }
+            }
+          }
+        }
+        /deep/.el-tabs{
+          margin-top: -0.01rem;
+          width: 46%;
+        }
+        /deep/.el-tabs__header{
+          margin: 0;
+        }
+        /deep/.el-tab-pane{
+          border-right:  1px solid #e5e5e5;
+          border-left:  1px solid #e5e5e5;
+          box-sizing: border-box;
+          padding: 0.22rem 0.16rem;
+          >a{
+            padding-right: 0.2rem;
+            margin-left: 0.2rem;
+            color: #9b9b9b;
+            font-size: 0.18rem;
+            font-weight: 500;
+            border-right: 1px solid #e5e5e5;
+            &:last-child{
+              border: none;
+            }
+          }
+          .active{
+            color: #f2ab2b;
+          }
+        }
+        /deep/ .el-tabs__item{
+          font-size: 0.2rem;
+          color: #9B9B9B;
+          height: 0.6rem;
+          line-height: 0.6rem;
+        }
+        /deep/ .el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+          font-weight: 500;
+          color: black;
+        }
+      }
+
+    }
+    &:last-child{
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      justify-content: space-between;
+      padding: 0 0.3rem 0.3rem 0.3rem;
+      margin-top: 0.14rem;
+      >div{
+        width: 24%;
+        background: white;
+        padding: 0.6rem 0.16rem 0.3rem 0.16rem;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        box-shadow: 0 0 4px rgba(204,204,204,0.4);
+        align-items: center;
+        >img{
+          width: 1.2rem;
+          height: 1.2rem;
+          display: inline-block;
+          border: 3px solid rgba(72,119,230,0.6);
+          border-radius: 50%;
+          position: absolute;
+          top: -0.6rem;
+          background: white;
+        }
+        >label{
+          width: 100%;
+          display: flex;
+          align-items: baseline;
+          font-size: 0.17rem;
+          font-weight: 400;
+          margin-top: 0.14rem;
+          >img{
+            width: 0.2rem;
+            height: auto;
+            vertical-align: middle;
+            position: relative;
+            top: 0.05rem;
+            margin-right: 0.1rem;
+          }
+          >p{
+            flex: 1;
+            line-height: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 0.06rem;
+            >span{
+              &:last-child{
+                color: #9B9B9B;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

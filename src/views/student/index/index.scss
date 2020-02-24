@@ -1,0 +1,134 @@
+.stu_wrap{
+  width: 100%;
+  background:rgba(245,245,245,1);
+  font-size: 0.2rem;
+  .main{
+    padding: 0.3rem 10%;
+    display: flex;
+    .menu{
+      flex-shrink: 0;
+      width: 3.8rem;
+      height: 10.8rem;
+      background: linear-gradient(#f2ab2b, rgba(242,171,43,0.9),#f2ab2b);
+      text-align: center;
+      position: relative;
+      .active{
+        color:#EC4949!important; ;
+      }
+      >img{
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+        margin-top: 0.3rem;
+        margin-bottom: -0.2rem;
+        background: white;
+      }
+      >div{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0.3rem;
+        align-items: baseline;
+        margin-top: 0.4rem;
+        >img{
+          width: 0.2rem;
+          height: 0.2rem;
+          flex-shrink: 0;
+          position: relative;
+          top: 0.03rem;
+          margin-right: 0.2rem;
+        }
+        >.userCenter{
+          flex: 1;
+          border-bottom: 1px solid #dfe6ec;
+          text-align: left;
+          margin-top: -1rem;
+
+          >a{
+            margin-left: 15px;
+            font-size: 0.2rem;
+            color: white;
+            &:hover{
+              color: #f2ab2b;
+            }
+          }
+        }
+        >div{
+          flex: 1;
+          /deep/ .el-collapse{
+            border: none;
+            position: relative;
+          }
+          /deep/ .el-collapse-item__header__arrow{
+            position: absolute;
+            right: 0;
+            top: 0.14rem;
+            font-size: 0.1rem;
+          }
+          /deep/ .el-collapse-item__header{
+            font-size: 0.2rem;
+            color: white;
+            background: rgba(255,255,255,0);
+            text-align: left;
+            border-bottom: none;
+          }
+          /deep/ .el-collapse-item__wrap{
+            background: rgba(255,255,255,0);
+          }
+          /deep/ .el-collapse-item__content{
+            font-size: 0.16rem;
+            color: white;
+            >div{
+              width: 100%;
+              text-align: left;
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              box-sizing: border-box;
+              //padding-right: 0.12rem;
+              >a{
+                display: inline;
+                text-align: left;
+                flex: 0 0 33.3%;
+                margin: 0.1rem 0 0.12rem 0;
+                color:white;
+                &:hover{
+                  color: #EC4949;
+                }
+                &:nth-child(2){
+                  text-align: center;
+                }
+                &:nth-child(3){
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }
+        &:last-child{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0.6rem;
+          background: rgba(255,255,255,0.12);
+          >a{
+            width: 100%;
+            height: 100%;
+            line-height: 0.6rem;
+            color: white;
+          }
+        }
+      }
+      &:after{
+        content: '';
+        clear: both;
+      }
+    }
+    .content-wrap{
+      flex: 1;
+      background: white;
+      margin-left: 0.3rem;
+    }
+  }
+}
+

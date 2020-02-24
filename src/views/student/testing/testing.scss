@@ -1,0 +1,205 @@
+.testing_wrap{
+  width: 100%;
+  font-size: 0.16rem;
+  .content {
+    width: 100%;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 0.3rem 10%;
+    .fixed{
+      position: fixed;
+      //top: 0;
+    }
+    .mgLeft{
+      margin-left: 3.3rem;
+    }
+    > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      >div{
+        &:first-child{
+          display: flex;
+          flex-direction: column;
+          margin-right: 0.1rem;
+          >div{
+            width: 3.2rem;
+            background: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0.3rem 0;
+            margin-bottom: 0.2rem;
+            >div{
+              width: 1rem;
+              height: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 0.5rem;
+              margin-bottom: 0.2rem;
+              >img{
+                width: 0.44rem;
+              }
+            }
+            >span{
+              font-size: 0.2rem;
+              font-weight: 400;
+            }
+            >p{
+              font-size: 0.34rem;
+              font-weight: 500;
+              letter-spacing: 1px;
+              margin: 0.1rem 0 0.2rem 0;
+            }
+            >a{
+              width: 1.6rem;
+              height: 0.36rem;
+              line-height: 0.36rem;
+              text-align: center;
+              color: white;
+              border-radius: 0.3rem;
+            }
+          }
+          .over{
+            >div{
+              background: #EC4949;
+            }
+            >span{
+              color: #EC4949;
+            }
+            >p{
+              color: #EC4949;
+            }
+            >a{
+              background: #EC4949;
+            }
+          }
+          .full{
+            >div{
+              background: rgba(71, 163, 80, 0.84);
+            }
+            >span{
+              color: rgba(71, 163, 80, 0.84);
+            }
+            >p{
+              color: rgba(71, 163, 80, 0.84);
+            }
+            >a{
+              background: rgba(71, 163, 80, 0.84);
+            }
+          }
+          .count{
+            >div{
+              background: #f2ab2b;
+            }
+            >span{
+              color:#f2ab2b;
+            }
+            >p{
+              color:#f2ab2b;
+            }
+            >a{
+              background: #f2ab2b;
+            }
+          }
+        }
+        &:last-child{
+          flex: 1;
+          background: white;
+          text-align: center;
+          padding: 0.4rem 0.7rem;
+          >p{
+            font-size: 0.36rem;
+            font-weight: 500;
+            color: #4a4a4a;
+            padding-bottom: 0.14rem;
+            border-bottom: 1px solid #cccccc;
+          }
+          > label{
+            font-size: 0.2rem;
+            color: #4a4a4a;
+            font-weight: 400;
+            padding: 0.3rem 0 0.2rem 0;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: baseline;
+            >p{
+              >a{
+                font-size: 0.16rem;
+                width: 0.28rem;
+                height: 0.28rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.28rem;
+                display: inline-block;
+                color: #4a4a4a;
+                margin:0  0.1rem ;
+              }
+              .active{
+                background: orange;
+                color: white;
+              }
+            }
+          }
+          .test{
+            padding: 0.2rem 0;
+            text-align: left;
+            color: #4a4a4a;
+            /deep/ .el-radio-group,.el-checkbox-group{
+              width: 100%;
+            }
+            /deep/ .el-radio,.el-checkbox{
+              min-width: 48%;
+              margin: 0.1rem 0;
+            }
+            /deep/ .el-radio__label,.el-checkbox__label{
+              font-size: 0.2rem;
+            }
+            /deep/ .el-radio__input.is-checked .el-radio__inner,.el-checkbox__input.is-checked .el-checkbox__inner{
+              border-color: rgba(71,163,80,0.84);
+              background:rgba(71,163,80,0.84);
+            }
+           >div{
+             text-align: center;
+             >a{
+               width: 1rem;
+               height: 0.36rem;
+               line-height: 0.36rem;
+               text-align: center;
+               color: white;
+               font-weight: 400;
+               display: inline-block;
+               font-size: 0.18rem;
+               border-radius: 2px;
+               background: rgba(71, 163, 80, 0.9);
+               margin-top: 0.3rem;
+           }
+             >p{
+               font-size: 0.22rem;
+               font-weight: 500;
+               background: rgba(144,144,144,0.06);
+               padding: 0.1rem 0.08rem;
+               text-align: left;
+             }
+             >div{
+               display: flex;
+               justify-content: flex-start;
+               flex-wrap: wrap;
+               padding: 0.2rem 1rem;
+               text-align: left;
+               >textarea{
+                 width: 100%;
+                 //height: 3rem;
+                 font-size: 0.24rem;
+                 padding: 0.2rem;
+                 box-sizing: border-box;
+               }
+             }
+           }
+          }
+        }
+      }
+    }
+  }
+}

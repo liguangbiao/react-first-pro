@@ -1,0 +1,215 @@
+.result_wrap{
+  width: 100%;
+  font-size: 0.16rem;
+  .content {
+    width: 100%;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 0.3rem 10%;
+    > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      >div{
+        &:first-child{
+          display: flex;
+          flex-direction: column;
+          margin-right: 0.1rem;
+          color: white;
+          >div{
+            width: 3.8rem;
+            background: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding:0;
+            margin-bottom: 0.2rem;
+            >label{
+              width: 100%;
+              background: #f2ab2b;
+              box-sizing: border-box;
+              padding: 0.2rem 0.26rem;
+              font-size: 0.21rem;
+              color: white;
+              font-weight: 300;
+              >p{
+                text-align: center;
+                position: relative;
+                font-size: 0.8rem;
+                font-weight: 500;
+                >span{
+                  font-size: 0.16rem;
+                  font-weight: 400;
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                }
+              }
+            }
+            >div{
+              width: 100%;
+              background: rgba(242,171,43,0.84);
+              padding: 0.2rem 0.1rem;
+              >label{
+                font-size: 0.2rem;
+                font-weight: 300;
+                >strong{
+                  font-size: 0.4rem;
+                  font-weight: 500;
+                }
+              }
+              &:nth-child(2){
+                display: flex;
+                justify-content: space-around;
+              }
+              &:nth-child(3){
+                padding: 0.2rem 0.04rem;
+                background: white;
+                color: #4a4a4a;
+                >p{
+                  padding: 0 0.1rem;
+                }
+                >div{
+                  padding: 0.1rem 0 0.1rem 0.1rem;
+                  >a{
+                    font-weight: 500;
+                    font-size: 0.18rem;
+                    line-height: 0.18rem;
+                    color:rgba(71, 163, 80, 0.84);
+                    width: 25%;
+                    display: inline-block;
+                    margin-top: 0.1rem;
+                    text-align: left;
+                    >span{
+                      display: inline-block;
+                      width: 0.25rem;
+                      height: 0.25rem;
+                      border-radius: 50%;
+                      line-height: 0.24rem;
+                      text-align: center;
+                      padding-right: 0px;
+                      box-sizing: border-box;
+                      font-size: 0.16rem;
+                      font-weight: 500;
+                      margin-right: 0.06rem;
+                      border: 1px solid rgba(71, 163, 80, 0.84);
+                      color:rgba(71, 163, 80, 0.84) ;
+                    }
+                  }
+                  .right{
+                    color:rgba(71, 163, 80, 0.84);
+                    >span{
+                      border: 1px solid rgba(71, 163, 80, 0.84);
+                      color:rgba(71, 163, 80, 0.84) ;
+                    }
+                  }
+                  .wrong{
+                    color:#EC4949;
+                    >span{
+                      border: 1px solid #EC4949;
+                      color:#EC4949 ;
+                    }
+                  }
+                }
+              }
+              &:last-child{
+                display: flex;
+                padding: 0.2rem 0;
+                background: #f2ab2b;
+                justify-content: space-around;
+                >label{
+                  text-align: center;
+                  font-size: 0.16rem;
+                  font-weight: 300;
+                  >span{
+                    font-size: 0.3rem;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:last-child{
+          flex: 1;
+          background: white;
+          text-align: center;
+          padding: 0.4rem 0.7rem;
+          >p{
+            font-size: 0.36rem;
+            font-weight: 500;
+            color: #4a4a4a;
+            padding-bottom: 0.14rem;
+            border-bottom: 1px solid #cccccc;
+          }
+          > label{
+            font-size: 0.2rem;
+            color: #4a4a4a;
+            font-weight: 400;
+            padding: 0.3rem 0 0.2rem 0;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: baseline;
+            >p{
+              >a{
+                font-size: 0.16rem;
+                width: 0.28rem;
+                height: 0.28rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.28rem;
+                display: inline-block;
+                color: white;
+                margin:0  0.1rem ;
+                background: rgba(71, 163, 80, 0.84);
+              }
+              .active{
+                background: #EC4949;
+              }
+            }
+          }
+          .test{
+            padding: 0.2rem 0;
+            text-align: left;
+            color: #4a4a4a;
+            /deep/ .el-radio-group,.el-checkbox-group{
+              width: 100%;
+            }
+            /deep/ .el-radio,.el-checkbox{
+              min-width: 48%;
+              margin: 0.1rem 0;
+            }
+            /deep/ .el-radio__label,.el-checkbox__label{
+              font-size: 0.2rem;
+            }
+            /deep/ .el-radio__input.is-checked .el-radio__inner,.el-checkbox__input.is-checked .el-checkbox__inner{
+              border-color: rgba(71,163,80,0.84);
+              background:rgba(71,163,80,0.84);
+            }
+            >div{
+              >p{
+                font-size: 0.22rem;
+                font-weight: 500;
+                background: rgba(144,144,144,0.06);
+                padding: 0.1rem 0.08rem;
+              }
+              >div{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                padding: 0.2rem 1rem;
+                >textarea{
+                  width: 100%;
+                  //height: 3rem;
+                  font-size: 0.24rem;
+                  padding: 0.2rem;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

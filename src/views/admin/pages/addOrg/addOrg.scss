@@ -1,0 +1,265 @@
+.admin_addOrg{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 0;
+  .up{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0.4rem 0;
+    >span{
+      display: inline-block;
+      width: 25%;
+      text-align: right;
+      margin-right: 0.4rem;
+    }
+  }
+  >div {
+    box-shadow: 0 0 10px #dcdcdc;
+    width: 100%;
+    background: white;
+    padding: 0.16rem 0.38rem;
+    &:first-child{
+      padding: 0.9rem 1rem 0.1rem 4rem;
+      /deep/ .el-steps{
+        zoom: 1.2;
+        //transform: scale(1.2);
+      }
+      /deep/ .el-step__main{
+        position: relative;
+        top: -70px;
+      }
+      /deep/.el-step__icon{
+        >div{
+          display: none;
+        }
+      }
+      /deep/.el-step__title{
+        font-size: 0.14rem;
+        //line-height: 0.32rem;
+      }
+    }
+    &:nth-child(2){
+      background: white;
+      width: 100%;
+      padding: 0.4rem 4rem 0.4rem 2.2rem;
+      margin-top: 0.2rem;
+      font-weight: 500;
+      font-size: 0.18rem;
+      .hp{
+        display: flex;
+        align-items: center;
+        >img{
+          width: 1rem;
+          height: 1rem;
+        }
+        >div{
+          font-size: 0.18rem;
+          color: #cccccc;
+          margin-left: 0.2rem;
+          padding-top: 0.1rem;
+          line-height: 0.2rem;
+        }
+      }
+
+      /deep/ .upload-demo{
+        text-align: left;
+        a{
+          display: block;
+          width: 0.74rem;
+          padding: 0.04rem 0;
+          color: #4a4a4a;
+          border: 0.5px solid #cccccc;
+          text-align: center;
+          margin: 0.1rem 0;
+          border-radius: 0.08rem;
+          font-size: 0.16rem;
+          line-height: 0.2rem;
+        }
+      }
+      .settime{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0.4rem 0;
+        >span{
+          display: inline-block;
+          width: 25%;
+          text-align: right;
+          margin-right: 0.4rem;
+        }
+        /deep/.el-date-editor.el-input{
+          width: 1.6rem;
+        }
+        /deep/.el-input{
+          font-size: 0.14rem;
+        }
+        /deep/.el-input__icon{
+          width: 0.35rem;
+        }
+        /deep/.el-input__icon+.el-input__inner{
+          padding-right: 0.35rem;
+        }
+        /deep/.el-date-editor{
+          //margin: 0.1rem 0.2rem 0.1rem 0.04rem;
+          margin-right: 0.06rem;
+        }
+        /deep/.el-input__inner{
+          border: 1px solid #cccccc;
+          color: #cccccc;
+          height: 0.46rem;
+        }
+        /deep/ .el-select{
+          display: inline-block;
+          margin: 0.2rem 0;
+        }
+        /deep/.el-input,.el-select-dropdown__item{
+          font-size: 0.18rem;
+        }
+        /deep/.el-date-table{
+          font-size: 0.18rem;
+        }
+        /deep/.el-checkbox__input.is-checked .el-checkbox__inner{
+          background-color: #4877E6;
+          border-color: #4877E6;
+        }
+        /deep/.el-checkbox__label{
+          font-size: 0.18rem;
+        }
+      }
+      >div:first-child{
+        /deep/ .el-upload-list{
+          display: none;
+        }
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0.4rem 0;
+        >span{
+          display: inline-block;
+          width: 25%;
+          text-align: right;
+          margin-right: 0.4rem;
+        }
+      }
+      >label{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0.4rem 0;
+        >span{
+          display: inline-block;
+          width: 25%;
+          text-align: right;
+          margin-right: 0.4rem;
+        }
+        >div{
+          flex: 1;
+          /deep/ .el-input__inner{
+            border: 1px solid #cccccc;
+            height: 0.44rem;
+            font-size: 0.16rem;
+          }
+          /deep/ .el-radio__label{
+            font-size: 0.18rem;
+            margin-right: 0.6rem;
+          }
+          /deep/ .el-radio__input.is-checked .el-radio__inner{
+            border-color: rgba(71,163,80,0.84);
+            background:rgba(71,163,80,0.84);
+          }
+          /deep/ .el-select .el-input__inner:focus{
+            border-color: #8391a5;
+          }
+          /deep/ .el-select .el-input .el-input__icon{
+            color:#cccccc;
+            font-size: 0.08rem;
+          }
+          /deep/ .el-select{
+            width: 1.8rem;
+            margin-right: 0.2rem;
+          }
+          /deep/ .el-select-dropdown__item{
+            font-size: 0.16rem;
+          }
+        }
+      }
+      >div{
+        width: 100%;
+        text-align: center;
+        margin: 0.2rem 0;
+        >a{
+          width: 1rem;
+          height: 0.4rem;
+          line-height: 0.4rem;
+          text-align: center;
+          color: white;
+          font-weight: 400;
+          display: inline-block;
+          font-size: 0.18rem;
+          border-radius: 0.04rem;
+          background: #4877E6;
+        }
+      }
+     .id{
+       display: flex;
+       justify-content: space-around;
+       /deep/ .el-upload--picture-card{
+         width: 2.8rem;
+         height: 1.8rem;
+         border: none;
+         border-radius: 0;
+       }
+       /deep/ .el-upload-list--picture-card .el-upload-list__item{
+         width: 2.8rem;
+         height: 1.8rem;
+         margin: 0;
+         border-radius: 0;
+         border: none;
+       }
+       .upload{
+         &:first-child{
+           /deep/ .el-upload--picture-card{
+             background: url("../../../../assets/images/org0.png");
+             background-size: 2.8rem 1.8rem;
+             background-position-x: center;
+             background-position-y: center;
+           }
+         }
+         &:nth-child(2){
+           /deep/ .el-upload--picture-card{
+             background: url("../../../../assets/images/org1.png");
+             background-size: 2.8rem 1.8rem;
+             background-position-x: center;
+             background-position-y: center;
+           }
+         }
+         width: 2.8rem;
+         height: 2.4rem;
+         background: #e5e5e5;
+         overflow: hidden;
+         position: relative;
+         padding-bottom: 1rem;
+         border-radius: 5px;
+         margin-right: 0.3rem;
+         &:last-child{
+           margin-right: 0;
+         }
+         >a{
+           width: 100%;
+           height: 0.6rem;
+           line-height: 0.6rem;
+           text-align: center;
+           display: inline-block;
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           background: #4877E6;
+           color: white;
+         }
+       }
+     }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.admin_userCenter{
+  padding: 0.3rem 0.3rem;
+  font-size: 0.2rem;
+  font-weight: 400;
+  >div{
+    background: white;
+    width: 100%;
+    padding: 0.8rem 3rem;
+    >p{
+      font-size: 0.36rem;
+      font-weight: 500;
+      color: #4a4a4a;
+    }
+    >label{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0.4rem 0;
+      >span{
+        display: inline-block;
+        width: 15%;
+      }
+      >div{
+        flex: 1;
+        /deep/ .el-input__inner{
+          border: 1px solid #cccccc;
+          height: 0.44rem;
+          font-size: 0.16rem;
+        }
+        /deep/ .el-radio__label{
+          font-size: 0.18rem;
+          margin-right: 0.6rem;
+        }
+        /deep/ .el-radio__input.is-checked .el-radio__inner{
+          border-color: rgba(71,163,80,0.84);
+          background:rgba(71,163,80,0.84);
+        }
+        /deep/ .el-select .el-input__inner:focus{
+          border-color: #8391a5;
+        }
+        /deep/ .el-select .el-input .el-input__icon{
+          color:#cccccc;
+          font-size: 0.08rem;
+        }
+        /deep/ .el-select{
+          width: 1.8rem;
+          margin-right: 0.2rem;
+        }
+        /deep/ .el-select-dropdown__item{
+          font-size: 0.16rem;
+        }
+      }
+      .hp{
+        display: flex;
+        align-items: center;
+        >img{
+          width: 1rem;
+          height: 1rem;
+        }
+        >p{
+          font-size: 0.18rem;
+          color: #cccccc;
+          margin-left: 0.2rem;
+          padding-top: 0.1rem;
+          >a{
+            display: block;
+            width: 0.74rem;
+            padding: 0.04rem 0;
+            color: #4a4a4a;
+            border: 0.5px solid #cccccc;
+            text-align: center;
+            margin: 0.1rem 0;
+            border-radius: 0.08rem;
+            font-size: 0.16rem;
+          }
+        }
+        >div{
+          font-size: 0.18rem;
+          color: #cccccc;
+          margin-left: 0.2rem;
+          padding-top: 0.1rem;
+          line-height: 0.2rem;
+        }
+        /deep/ .el-upload-list{
+          display: none;
+        }
+        /deep/ .upload-demo{
+          text-align: left;
+          a{
+            display: block;
+            width: 0.74rem;
+            padding: 0.04rem 0;
+            color: #4a4a4a;
+            border: 0.5px solid #cccccc;
+            text-align: center;
+            margin: 0.1rem 0;
+            border-radius: 0.08rem;
+            font-size: 0.16rem;
+            line-height: 0.2rem;
+          }
+        }
+      }
+      .name{
+        position: relative;
+        >span{
+          position: absolute;
+          color: rgba(71,163,80,0.84);
+          display: inline-block;
+          width: 1.2rem;
+          text-align: center;
+          right: 0;
+          font-weight: 300;
+          font-size: 0.16rem;
+          top: 0.1rem;
+        }
+      }
+    }
+    >div{
+      &:nth-child(2){
+        .hp{
+          display: flex;
+          align-items: center;
+          >img{
+            width: 1rem;
+            height: 1rem;
+          }
+          >div{
+            font-size: 0.18rem;
+            color: #cccccc;
+            margin-left: 0.2rem;
+            padding-top: 0.1rem;
+            line-height: 0.2rem;
+          }
+        }
+        /deep/ .el-upload-list{
+          display: none;
+        }
+        /deep/ .upload-demo{
+          text-align: left;
+          a{
+            display: block;
+            width: 0.74rem;
+            padding: 0.04rem 0;
+            color: #4a4a4a;
+            border: 0.5px solid #cccccc;
+            text-align: center;
+            margin: 0.1rem 0;
+            border-radius: 0.08rem;
+            font-size: 0.16rem;
+            line-height: 0.2rem;
+          }
+        }
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0.4rem 0;
+        >span{
+          display: inline-block;
+          width: 15%;
+          text-align: left;
+        }
+      }
+      width: 100%;
+      text-align: center;
+      margin: 0.2rem 0;
+      >a{
+        width: 0.8rem;
+        height: 0.36rem;
+        line-height: 0.36rem;
+        text-align: center;
+        color: white;
+        border: 1.5px solid rgba(71,163,80,0.84);
+        font-weight: 400;
+        display: inline-block;
+        font-size: 0.18rem;
+        border-radius: 2px;
+        background: rgba(71,163,80,0.99);
+      }
+    }
+  }
+}

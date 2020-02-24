@@ -1,0 +1,77 @@
+.admin_addNews{
+  padding: 0.3rem 0.3rem;
+  font-size: 0.18rem;
+  font-weight: 400;
+  >div {
+    background: white;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    >input{
+      font-size: 0.32rem;
+      width: 100%;
+      text-align: center;
+      ::placeholder{
+        color: #eeeeee;
+      }
+    }
+    >label{
+      width: 100%;
+      display: block;
+      color: rgba(144,144,144,0.81);
+      border-bottom: 1px solid rgba(144,144,144,0.81);
+      text-align: right;
+      padding-bottom: 0.1rem;
+      position: relative;
+      >div{
+        z-index: 10001;
+        position: absolute;
+        right: 0.3rem;
+        top: 0.474rem;
+        /deep/.el-input{
+          font-size: 0.16rem;
+        }
+        /deep/.el-input__inner{
+          background-color: #f1f1f1;
+          border-color:#f1f1f1;
+        }
+        /deep/.el-date-editor.el-input{
+          width: 1.6rem;
+        }
+      }
+    }
+    .edit{
+      margin-top: 0.1rem;
+      width: 100%;
+      .w-e-toolbar{
+        padding: 0.08rem 0;
+      }
+      .w-e-text-container{
+        height: 4.6rem!important;
+        z-index: 999!important;
+      }
+    }
+    .btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 0.3rem;
+      >a{
+        width: 1rem;
+        height: 0.36rem;
+        line-height: 0.36rem;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        display: inline-block;
+        font-size: 0.18rem;
+        border-radius: 2px;
+        background: rgba(71, 163, 80, 0.9);
+        margin: 0 0.14rem;
+        &:last-child{
+          background: white;
+          border: 1px solid #9B9B9B;
+          color: #4a4a4a;
+        }
+      }
+    }
+  }
+}
